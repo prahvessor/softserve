@@ -1,4 +1,5 @@
 ﻿using System;
+using NIO;
 
 namespace Statistic
 {
@@ -21,7 +22,8 @@ namespace Statistic
             */
             // Case 2. User inputs line of numbers
             Console.WriteLine("Enter numbers. Use white space between numbers:");
-            String text = Console.ReadLine();
+            string text = Terminal.Input(); 
+
             string[] words = text.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
             int[] customArray = new int[words.Length];
 
@@ -34,19 +36,19 @@ namespace Statistic
             Console.WriteLine("Using For loop:");
             int minIndexFor = Statistic.GetMinIndexByFor(customArray);
             int maxIndexFor = Statistic.GetMaxIndexByFor(customArray);
-            Statistic.Print(customArray, minIndexFor, maxIndexFor);
-            
+            Terminal.Print(customArray, minIndexFor, maxIndexFor);
+
             // using while loop
             Console.WriteLine("Using While loop:");
             int minIndexWhile = Statistic.GetMinIndexByWhile(customArray);
             int maxIndexWhile = Statistic.GetMaxIndexByWhile(customArray);
-            Statistic.Print(customArray, minIndexWhile, maxIndexWhile);
-            
+            Terminal.Print(customArray, minIndexWhile, maxIndexWhile);
+
             // using do loop
             Console.WriteLine("Using Do loop:");
             int minIndexDo = Statistic.GetMinIndexByDo(customArray);
             int maxIndexDo = Statistic.GetMaxIndexByDo(customArray);
-            Statistic.Print(customArray, minIndexDo, maxIndexDo);
+            Terminal.Print(customArray, minIndexDo, maxIndexDo);
         }
     }
 }

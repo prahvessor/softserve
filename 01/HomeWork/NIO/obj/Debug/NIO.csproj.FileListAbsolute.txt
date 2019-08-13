@@ -1,0 +1,6 @@
+C:\_work\dp-172_devops\Homework\01\HomeWork\NIO\bin\Debug\NIO.dll
+C:\_work\dp-172_devops\Homework\01\HomeWork\NIO\bin\Debug\NIO.pdb
+C:\_work\dp-172_devops\Homework\01\HomeWork\NIO\obj\Debug\NIO.csprojAssemblyReference.cache
+C:\_work\dp-172_devops\Homework\01\HomeWork\NIO\obj\Debug\NIO.csproj.CoreCompileInputs.cache
+C:\_work\dp-172_devops\Homework\01\HomeWork\NIO\obj\Debug\NIO.dll
+C:\_work\dp-172_devops\Homework\01\HomeWork\NIO\obj\Debug\NIO.pdb

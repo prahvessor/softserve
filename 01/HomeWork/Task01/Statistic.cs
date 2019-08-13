@@ -103,11 +103,5 @@ namespace Statistic
             } while (i < customArray.Length);
             return index;
         }
-
-        public static void Print(int[] customArray, int minIndex, int maxIndex)
-        {
-            Console.WriteLine("  Minimal element is customArray[{0}]={1}", minIndex, customArray[minIndex]);
-            Console.WriteLine("  Maximal element is customArray[{0}]={1}", maxIndex, customArray[maxIndex]);
-        }
     }
 }

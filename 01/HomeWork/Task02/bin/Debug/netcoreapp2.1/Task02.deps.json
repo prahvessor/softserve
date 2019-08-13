@@ -6,28 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {
-      "Task01/1.0.0": {
-        "dependencies": {
-          "NIO": "1.0.0"
-        },
+      "Task02/1.0.0": {
         "runtime": {
-          "Task01.dll": {}
-        }
-      },
-      "NIO/1.0.0": {
-        "runtime": {
-          "NIO.dll": {}
+          "Task02.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Task01/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "NIO/1.0.0": {
+    "Task02/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,0 +1,11 @@
+C:\_work\dp-172_devops\Homework\01\HomeWork\Task02\bin\Debug\netcoreapp2.1\Task02.deps.json
+C:\_work\dp-172_devops\Homework\01\HomeWork\Task02\bin\Debug\netcoreapp2.1\Task02.runtimeconfig.json
+C:\_work\dp-172_devops\Homework\01\HomeWork\Task02\bin\Debug\netcoreapp2.1\Task02.runtimeconfig.dev.json
+C:\_work\dp-172_devops\Homework\01\HomeWork\Task02\bin\Debug\netcoreapp2.1\Task02.dll
+C:\_work\dp-172_devops\Homework\01\HomeWork\Task02\bin\Debug\netcoreapp2.1\Task02.pdb
+C:\_work\dp-172_devops\Homework\01\HomeWork\Task02\obj\Debug\netcoreapp2.1\Task02.csprojAssemblyReference.cache
+C:\_work\dp-172_devops\Homework\01\HomeWork\Task02\obj\Debug\netcoreapp2.1\Task02.csproj.CoreCompileInputs.cache
+C:\_work\dp-172_devops\Homework\01\HomeWork\Task02\obj\Debug\netcoreapp2.1\Task02.AssemblyInfoInputs.cache
+C:\_work\dp-172_devops\Homework\01\HomeWork\Task02\obj\Debug\netcoreapp2.1\Task02.AssemblyInfo.cs
+C:\_work\dp-172_devops\Homework\01\HomeWork\Task02\obj\Debug\netcoreapp2.1\Task02.dll
+C:\_work\dp-172_devops\Homework\01\HomeWork\Task02\obj\Debug\netcoreapp2.1\Task02.pdb

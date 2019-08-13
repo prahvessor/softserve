@@ -9,3 +9,6 @@ C:\_work\dp-172_devops\Homework\01\HomeWork\Task01\obj\Debug\netcoreapp2.1\Task0
 C:\_work\dp-172_devops\Homework\01\HomeWork\Task01\obj\Debug\netcoreapp2.1\Task01.AssemblyInfo.cs
 C:\_work\dp-172_devops\Homework\01\HomeWork\Task01\obj\Debug\netcoreapp2.1\Task01.dll
 C:\_work\dp-172_devops\Homework\01\HomeWork\Task01\obj\Debug\netcoreapp2.1\Task01.pdb
+C:\_work\dp-172_devops\Homework\01\HomeWork\Task01\bin\Debug\netcoreapp2.1\NIO.dll
+C:\_work\dp-172_devops\Homework\01\HomeWork\Task01\bin\Debug\netcoreapp2.1\NIO.pdb
+C:\_work\dp-172_devops\Homework\01\HomeWork\Task01\obj\Debug\netcoreapp2.1\Task01.csproj.CopyComplete

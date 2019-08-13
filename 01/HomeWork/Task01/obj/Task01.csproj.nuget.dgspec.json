@@ -4,6 +4,17 @@
     "C:\\_work\\dp-172_devops\\Homework\\01\\HomeWork\\Task01\\Task01.csproj": {}
   },
   "projects": {
+    "C:\\_work\\dp-172_devops\\Homework\\01\\HomeWork\\NIO\\NIO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\_work\\dp-172_devops\\Homework\\01\\HomeWork\\NIO\\NIO.csproj",
+        "projectName": "NIO",
+        "projectPath": "C:\\_work\\dp-172_devops\\Homework\\01\\HomeWork\\NIO\\NIO.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "C:\\_work\\dp-172_devops\\Homework\\01\\HomeWork\\Task01\\Task01.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -29,7 +40,11 @@
         },
         "frameworks": {
           "netcoreapp2.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\_work\\dp-172_devops\\Homework\\01\\HomeWork\\NIO\\NIO.csproj": {
+                "projectPath": "C:\\_work\\dp-172_devops\\Homework\\01\\HomeWork\\NIO\\NIO.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -42,6 +57,7 @@
         "netcoreapp2.1": {
           "dependencies": {
             "Microsoft.NETCore.App": {
+              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true

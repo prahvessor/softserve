@@ -207,6 +207,15 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "NIO/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/NIO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NIO.dll": {}
+        }
       }
     }
   },
@@ -680,11 +689,17 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "NIO/1.0.0": {
+      "type": "project",
+      "path": "../NIO/NIO.csproj",
+      "msbuildProject": "../NIO/NIO.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "NIO >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -716,7 +731,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\_work\\dp-172_devops\\Homework\\01\\HomeWork\\NIO\\NIO.csproj": {
+              "projectPath": "C:\\_work\\dp-172_devops\\Homework\\01\\HomeWork\\NIO\\NIO.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -729,6 +748,7 @@
       "netcoreapp2.1": {
         "dependencies": {
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
