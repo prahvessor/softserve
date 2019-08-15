@@ -4,23 +4,23 @@ namespace Task02
 {
     class Recursion
     {
+        private static Random rand = new Random();
         public static void Main(string[] args)
         {
             Recursion myRecursion = new Recursion();
-            int[] customSequence = myRecursion.Initialize();
-            int FirstIndex = 0;
-            myRecursion.Print(customSequence, FirstIndex);
+
+            int[] customSequence = myRecursion.Initialize(10, -100, 100);
+
+            myRecursion.Print(customSequence);
         }
 
-        private int[] Initialize()
+        private int[] Initialize(int count, int min, int max)
         {
-            int itemNumber = 10;
-            Random rand = new Random();
-            int[] customSequence = new int[itemNumber];
+            int[] customSequence = new int[count];
 
-            for (int i = 0; i < itemNumber; i++)
+            for (int i = 0; i < count; i++)
             {
-                customSequence[i] = rand.Next(-100, 100);
+                customSequence[i] = rand.Next(min, max);
             }
 
             return customSequence;
@@ -35,15 +35,13 @@ namespace Task02
             {
                 return;
             }
-            else
+
+            tempElement = customSequence[current];
+            if (customSequence[current] < 0)
             {
-                tempElement = customSequence[current];
-                if (customSequence[current] < 0)
-                {
-                    Console.WriteLine("array[{0}]={1} ", current, customSequence[current]);
-                }
-                Print(customSequence, ++current);
+                Console.WriteLine("array[{0}]={1} ", current, customSequence[current]);
             }
+            Print(customSequence, ++current);
 
             if (tempElement > 0)
             {
