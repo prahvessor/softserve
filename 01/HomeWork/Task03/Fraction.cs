@@ -11,15 +11,17 @@ namespace Task03
         private int _numerator = 0;
         private int _denominator = 1;
 
+        #region ctors
+
         public Fraction()
         {
             _numerator = 0;
             _denominator = 1;
         }
 
-        public Fraction(int numerators, int denominator)
+        public Fraction(int numerator, int denominator)
         {
-            _numerator = numerators;
+            _numerator = numerator;
 
             if (denominator == 0)
             {
@@ -30,6 +32,20 @@ namespace Task03
                 _denominator = denominator;
             }
         }
+
+        public Fraction(double number)
+        {
+            string tmp = "" + number;
+            string[] result = tmp.Split(new char[] { '.' }, StringSplitOptions.None);
+            int right_length = result[1].Length;
+
+            int denominator = Convert.ToInt32(Math.Pow(10, right_length));
+            int numerator = Convert.ToInt32(denominator * number);
+
+            _numerator = numerator;
+            _denominator = denominator;
+        }
+        #endregion
 
         #region values accessors
         public int Nomenator

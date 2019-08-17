@@ -1,7 +1,7 @@
 ![Alt text](/Softserve-logo-RGB.png?raw=true "Softserve DevOps course")
 
 # Softserve
-Домашнее задание
+Homework tasks
 
 ### Task01
 Find Min/Max element and its indexes in array
