@@ -1,0 +1,7 @@
+C:\_work\dp-172_devops\Homework\01\HomeWork\Task03\bin\Debug\Task03.exe.config
+C:\_work\dp-172_devops\Homework\01\HomeWork\Task03\bin\Debug\Task03.exe
+C:\_work\dp-172_devops\Homework\01\HomeWork\Task03\bin\Debug\Task03.pdb
+C:\_work\dp-172_devops\Homework\01\HomeWork\Task03\obj\Debug\Task03.csprojAssemblyReference.cache
+C:\_work\dp-172_devops\Homework\01\HomeWork\Task03\obj\Debug\Task03.csproj.CoreCompileInputs.cache
+C:\_work\dp-172_devops\Homework\01\HomeWork\Task03\obj\Debug\Task03.exe
+C:\_work\dp-172_devops\Homework\01\HomeWork\Task03\obj\Debug\Task03.pdb

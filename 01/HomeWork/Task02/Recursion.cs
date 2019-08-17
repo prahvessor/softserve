@@ -31,7 +31,7 @@ namespace Task02
             int tempIndex = current;
             int tempElement = 0;
 
-            if (current == customSequence.Length)
+            if (current >= customSequence.Length)
             {
                 return;
             }
@@ -43,6 +43,9 @@ namespace Task02
             }
             Print(customSequence, ++current);
 
+
+            //Console.WriteLine("array[{0}]= ", customSequence[current]);
+            
             if (tempElement > 0)
             {
                 Console.WriteLine("array[{0}]={1} ", tempIndex, tempElement);
@@ -50,3 +53,4 @@ namespace Task02
         }
     }
 }
+ 
