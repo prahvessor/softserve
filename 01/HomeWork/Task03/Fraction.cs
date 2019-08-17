@@ -68,7 +68,8 @@ namespace Task03
             Fraction result = new Fraction();
             int nok = NOK(arg1.Denomenator, arg2.Denomenator);
             
-            result._numerator = arg1._numerator * Modifier(nok, arg1._denominator) + arg2._numerator * Modifier(nok, arg2._denominator);
+            result._numerator = arg1._numerator * Modifier(nok, arg1._denominator) + 
+                arg2._numerator * Modifier(nok, arg2._denominator);
             result._denominator = nok;
 
             return result;
@@ -79,7 +80,8 @@ namespace Task03
             Fraction result = new Fraction();
             int nok = NOK(arg1.Denomenator, arg2.Denomenator);
 
-            result._numerator = arg1._numerator * Modifier(nok, arg1._denominator) - arg2._numerator * Modifier(nok, arg2._denominator);
+            result._numerator = arg1._numerator * Modifier(nok, arg1._denominator) - 
+                arg2._numerator * Modifier(nok, arg2._denominator);
             result._denominator = nok;
 
             return result;
@@ -103,7 +105,8 @@ namespace Task03
             Fraction result = new Fraction();
             int nok = NOK(arg1.Denomenator, arg2.Denomenator);
 
-            result._numerator = arg1._numerator * Modifier(nok, arg1._denominator) - arg2._numerator * Modifier(nok, arg2._denominator);
+            result._numerator = arg1._numerator * Modifier(nok, arg1._denominator) - 
+                arg2._numerator * Modifier(nok, arg2._denominator);
             result._denominator = nok;
 
             if (result._numerator > 0)
@@ -119,7 +122,8 @@ namespace Task03
             Fraction result = new Fraction();
             int nok = NOK(arg1.Denomenator, arg2.Denomenator);
 
-            result._numerator = arg1._numerator * Modifier(nok, arg1._denominator) - arg2._numerator * Modifier(nok, arg2._denominator);
+            result._numerator = arg1._numerator * Modifier(nok, arg1._denominator) - 
+                arg2._numerator * Modifier(nok, arg2._denominator);
             result._denominator = nok;
 
             if (result._numerator < 0)
@@ -135,7 +139,8 @@ namespace Task03
             Fraction result = new Fraction();
             int nok = NOK(arg1.Denomenator, arg2.Denomenator);
 
-            result._numerator = arg1._numerator * Modifier(nok, arg1._denominator) - arg2._numerator * Modifier(nok, arg2._denominator);
+            result._numerator = arg1._numerator * Modifier(nok, arg1._denominator) - 
+                arg2._numerator * Modifier(nok, arg2._denominator);
             result._denominator = nok;
 
             if (result._numerator == 0)
@@ -151,7 +156,8 @@ namespace Task03
             Fraction result = new Fraction();
             int nok = NOK(arg1.Denomenator, arg2.Denomenator);
 
-            result._numerator = arg1._numerator * Modifier(nok, arg1._denominator) - arg2._numerator * Modifier(nok, arg2._denominator);
+            result._numerator = arg1._numerator * Modifier(nok, arg1._denominator) - 
+                arg2._numerator * Modifier(nok, arg2._denominator);
             result._denominator = nok;
 
             if (result._numerator != 0)

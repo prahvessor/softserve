@@ -24,7 +24,9 @@ namespace Task03
                 Console.ReadKey();
                 return;
             }
-            
+
+            Console.WriteLine("Common fractions");
+
             Fraction fraction3 = fraction1 * fraction2;
             Console.WriteLine("{0} * {1} = {2}", fraction1, fraction2, fraction3);
             
@@ -50,6 +52,7 @@ namespace Task03
             Console.WriteLine("{0} <= {1} is {2}", fraction1, fraction2, fraction1 <= fraction2);
             Console.ReadKey();
 
+            Console.WriteLine("Decimal fractions");
             Fraction fraction7 = new Fraction(0.5);
             Fraction fraction8 = new Fraction(1.5);
 
