@@ -66,11 +66,11 @@ namespace Task03
         public static Fraction operator +(Fraction arg1, Fraction arg2)
         {
             Fraction result = new Fraction();
-            int nok = NOK(arg1.Denomenator, arg2.Denomenator);
+            int lcm = GetLCM(arg1.Denomenator, arg2.Denomenator);
             
-            result._numerator = arg1._numerator * Modifier(nok, arg1._denominator) + 
-                arg2._numerator * Modifier(nok, arg2._denominator);
-            result._denominator = nok;
+            result._numerator = arg1._numerator * Modifier(lcm, arg1._denominator) + 
+                arg2._numerator * Modifier(lcm, arg2._denominator);
+            result._denominator = lcm;
 
             return result;
         }
@@ -78,11 +78,11 @@ namespace Task03
         public static Fraction operator -(Fraction arg1, Fraction arg2)
         {
             Fraction result = new Fraction();
-            int nok = NOK(arg1.Denomenator, arg2.Denomenator);
+            int lcm = GetLCM(arg1.Denomenator, arg2.Denomenator);
 
-            result._numerator = arg1._numerator * Modifier(nok, arg1._denominator) - 
-                arg2._numerator * Modifier(nok, arg2._denominator);
-            result._denominator = nok;
+            result._numerator = arg1._numerator * Modifier(lcm, arg1._denominator) - 
+                arg2._numerator * Modifier(lcm, arg2._denominator);
+            result._denominator = lcm;
 
             return result;
         }
@@ -103,95 +103,66 @@ namespace Task03
         public static bool operator >(Fraction arg1, Fraction arg2)
         {
             Fraction result = new Fraction();
-            int nok = NOK(arg1.Denomenator, arg2.Denomenator);
+            int lcm = GetLCM(arg1.Denomenator, arg2.Denomenator);
 
-            result._numerator = arg1._numerator * Modifier(nok, arg1._denominator) - 
-                arg2._numerator * Modifier(nok, arg2._denominator);
-            result._denominator = nok;
+            result._numerator = arg1._numerator * Modifier(lcm, arg1._denominator) - 
+                arg2._numerator * Modifier(lcm, arg2._denominator);
+            result._denominator = lcm;
 
-            if (result._numerator > 0)
-            {
-                return true;
-            }
-
-            return false;
+            return (result._numerator > 0);
         }
 
         public static bool operator <(Fraction arg1, Fraction arg2)
         {
             Fraction result = new Fraction();
-            int nok = NOK(arg1.Denomenator, arg2.Denomenator);
+            int lcm = GetLCM(arg1.Denomenator, arg2.Denomenator);
 
-            result._numerator = arg1._numerator * Modifier(nok, arg1._denominator) - 
-                arg2._numerator * Modifier(nok, arg2._denominator);
-            result._denominator = nok;
+            result._numerator = arg1._numerator * Modifier(lcm, arg1._denominator) - 
+                arg2._numerator * Modifier(lcm, arg2._denominator);
+            result._denominator = lcm;
 
-            if (result._numerator < 0)
-            {
-                return true;
-            }
-
-            return false;
+            return (result._numerator < 0);
         }
 
         public static bool operator ==(Fraction arg1, Fraction arg2)
         {
             Fraction result = new Fraction();
-            int nok = NOK(arg1.Denomenator, arg2.Denomenator);
+            int lcm = GetLCM(arg1.Denomenator, arg2.Denomenator);
 
-            result._numerator = arg1._numerator * Modifier(nok, arg1._denominator) - 
-                arg2._numerator * Modifier(nok, arg2._denominator);
-            result._denominator = nok;
+            result._numerator = arg1._numerator * Modifier(lcm, arg1._denominator) - 
+                arg2._numerator * Modifier(lcm, arg2._denominator);
+            result._denominator = lcm;
 
-            if (result._numerator == 0)
-            {
-                return true;
-            }
-
-            return false;
+            return (result._numerator == 0);
         }
 
         public static bool operator !=(Fraction arg1, Fraction arg2)
         {
             Fraction result = new Fraction();
-            int nok = NOK(arg1.Denomenator, arg2.Denomenator);
+            int lcm = GetLCM(arg1.Denomenator, arg2.Denomenator);
 
-            result._numerator = arg1._numerator * Modifier(nok, arg1._denominator) - 
-                arg2._numerator * Modifier(nok, arg2._denominator);
-            result._denominator = nok;
+            result._numerator = arg1._numerator * Modifier(lcm, arg1._denominator) - 
+                arg2._numerator * Modifier(lcm, arg2._denominator);
+            result._denominator = lcm;
 
-            if (result._numerator != 0)
-            {
-                return true;
-            }
-
-            return false;
+            return (result._numerator != 0);
         }
 
         public static bool operator >=(Fraction arg1, Fraction arg2)
         {
-            if (arg1 > arg2 | arg1 == arg2)
-            {
-                return true;
-            }
-
-            return false;
+            return (arg1 > arg2 | arg1 == arg2);
         }
 
         public static bool operator <=(Fraction arg1, Fraction arg2)
         {
-            if (arg1 < arg2 | arg1 == arg2)
-            {
-                return true;
-            }
-
-            return false;
+            return (arg1 < arg2 | arg1 == arg2);
         }
 
         #endregion
 
         #region Service function
-        private static int NOK(int denominator1, int denominator2)
+        // Least common multiple
+        private static int GetLCM(int denominator1, int denominator2)
         {
             int nok = 0;
             for (int i = 0; i < (denominator1 * denominator2 + 1); i++)
@@ -208,9 +179,9 @@ namespace Task03
             return nok;
         }
 
-        private static int Modifier(int nok, int denominator)
+        private static int Modifier(int lcm, int denominator)
         {
-            return nok / denominator;
+            return lcm / denominator;
         }
         #endregion
 

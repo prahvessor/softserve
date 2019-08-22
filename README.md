@@ -15,9 +15,9 @@ Implement application which prints negative elementes of array, then prints posi
 ### Task03
 Implement application which represents normal friction
  
-  a    - nomerator
-  -
-  b    - denumenator
+  a / b   
+  a - nomerator
+  b - denumenator
 
 - implement all operations arithmetical and logical
 - implement various constructors
