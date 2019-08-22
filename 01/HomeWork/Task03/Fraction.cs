@@ -13,10 +13,8 @@ namespace Task03
 
         #region ctors
 
-        public Fraction()
+        public Fraction() : this (0, -1)
         {
-            _numerator = 0;
-            _denominator = 1;
         }
 
         public Fraction(int numerator, int denominator)
